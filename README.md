@@ -2,7 +2,7 @@
 ## projeto feito durante Bootcamp
 ### jedi-registration
 
-## Aplicação simples usando REST e Spring Web MVC
+## Aplicação simples usando REST com Spring Web MVC
 MVC - Model, View and Controller
 
 View = https://www.thymeleaf.org/
