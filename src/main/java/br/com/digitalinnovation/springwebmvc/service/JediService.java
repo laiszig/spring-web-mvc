@@ -18,8 +18,8 @@ public class JediService {
     }
 
     public Jedi findById(final Long id) {
-       final Optional<Jedi> jedi = repository.findById(id);
-        if(jedi.isPresent()){
+        final Optional<Jedi> jedi = repository.findById(id);
+        if (jedi.isPresent()) {
             return jedi.get();
         } else {
             throw new JediNotFoundException();
@@ -34,7 +34,7 @@ public class JediService {
         final Optional<Jedi> jediEntity = repository.findById(id);
         final Jedi jedi;
 
-        if(jediEntity.isPresent()){
+        if (jediEntity.isPresent()) {
             jedi = jediEntity.get();
         } else {
             throw new JediNotFoundException();
@@ -49,6 +49,6 @@ public class JediService {
     public void delete(Long id) {
         final Jedi jedi = findById(id);
         repository.delete(jedi);
-        }
     }
 }
+

@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface JediRepository extends JpaRepository {
+public interface JediRepository extends JpaRepository <Jedi, Long> {
     List<Jedi> findByNameContainingIgnoreCase(final String name);
 }
